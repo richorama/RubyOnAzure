@@ -50,14 +50,6 @@
     <Folder Include="Profiles" />
     <Folder Include="WorkerRole1Content\" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="WorkerRole1Content\rubyinstaller-2.0.0-p0-x64.exe">
-      <SubType>Content</SubType>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <PublishProfile Include="Profiles\rasinatraProduction.azurePubxml" />
-  </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
