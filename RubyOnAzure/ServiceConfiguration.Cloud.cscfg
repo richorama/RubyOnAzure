@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="RubyOnAzure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="WorkerRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=cloudfox;AccountKey=AIG4vPda/WIIjwcyEoWn8UoVyEcQWrFw9QZpbQadipAYXro5ebKw9Hy+Uk1z3ZeANnDEN7lGXhkAC9m065t5og==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="rich" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCECiIIQVX/9OsRM19CgUPFtQwDQYJKoZIhvcNAQEBBQAEggEAFJ+bYn/RyfDMRVlR/S6gcXyJRpF1ZB1D47F3uoMvRBUradojOr8Aqvn6akniN1RG/IgHzSfNLzIUVo7YyYxI6HPaOjNdS0Gs5/B3mnUx4Tadh3aF+johxFJwi7c4gOcU4Mfx3RSC4TTLlg96LQzMvrYve/IPEI8/wKCmh/6/5FfdeQmAQG/ihCy/u69rT/wy8WrJDBLY/cH0M2cwb/G/iq/PNIR8f2PtLvKVDnebLSoa+J+2GrDXYwCxmlRjx21yzDBfVoNlSM1ko54lGb6QsaIC9daFwWnZBxwwMw3CxH8mUrcFansU4gtO5X8l/PZPTfyu1+Ow4Ce2uYneWX4UXDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECACLJVC0OPiRgBCJPMVgPnPSSWDCNTxRxDT0" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-04-03T23:59:59.0000000+01:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="8BF3FE6B1544D7FB8CE0552201911ACE57AE1BD8" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

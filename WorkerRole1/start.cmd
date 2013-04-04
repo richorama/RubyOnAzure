@@ -1,0 +1,1 @@
+D:\Ruby200-x64\bin\ruby.exe main.rb >> start.log

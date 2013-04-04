@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="RubyOnAzure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-10.1.8">
+  <WorkerRole name="WorkerRole1" vmsize="Small">
+    <Startup>
+      <Task commandLine="install.cmd" executionContext="elevated" taskType="simple"></Task>
+      <Task commandLine="start.cmd" executionContext="elevated" taskType="background"></Task>
+    </Startup>
+    <Imports>
+      <Import moduleName="Diagnostics" />
+    </Imports>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="tcp" port="80" localPort="8080" />
+    </Endpoints>
+  </WorkerRole>
+</ServiceDefinition>
